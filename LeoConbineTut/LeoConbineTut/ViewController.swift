@@ -14,9 +14,25 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        Session1.sample()
-        
+        session1()
     
+    }
+    func session1(){
+        //Session1.sample()
+        //Session1.whatIsAPublisher()
+        
+       //different Kinds Of Publishers In Combine
+        
+        //Session1.justPublisher()
+        
+        //Session1.failPub()
+        
+        //Session1.futurePub()
+        
+       // Session1.defferPub()
+        
+        
+        Session1.whatIsASubscriber()
     }
 
 
