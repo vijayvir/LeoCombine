@@ -14,6 +14,15 @@
 		1872F64824648C200029FA1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1872F64724648C200029FA1D /* Assets.xcassets */; };
 		1872F64B24648C200029FA1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1872F64924648C200029FA1D /* LaunchScreen.storyboard */; };
 		1872F65324648CB00029FA1D /* Session1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872F65224648CB00029FA1D /* Session1.swift */; };
+		187576F324650BC1003991A4 /* Session2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187576F224650BC1003991A4 /* Session2.swift */; };
+		187576FC24650EFB003991A4 /* Session5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187576F424650EFB003991A4 /* Session5ViewController.swift */; };
+		187576FD24650EFB003991A4 /* Session4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187576F524650EFB003991A4 /* Session4ViewController.swift */; };
+		187576FE24650EFB003991A4 /* Session6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187576F624650EFB003991A4 /* Session6ViewController.swift */; };
+		187576FF24650EFB003991A4 /* Session3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187576F724650EFB003991A4 /* Session3ViewController.swift */; };
+		1875770024650EFB003991A4 /* Session1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187576F824650EFB003991A4 /* Session1ViewController.swift */; };
+		1875770124650EFB003991A4 /* Session8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187576F924650EFB003991A4 /* Session8ViewController.swift */; };
+		1875770224650EFB003991A4 /* Session2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187576FA24650EFB003991A4 /* Session2ViewController.swift */; };
+		1875770324650EFB003991A4 /* Session7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187576FB24650EFB003991A4 /* Session7ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,15 @@
 		1872F64A24648C200029FA1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1872F64C24648C200029FA1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1872F65224648CB00029FA1D /* Session1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session1.swift; sourceTree = "<group>"; };
+		187576F224650BC1003991A4 /* Session2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session2.swift; sourceTree = "<group>"; };
+		187576F424650EFB003991A4 /* Session5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session5ViewController.swift; sourceTree = "<group>"; };
+		187576F524650EFB003991A4 /* Session4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session4ViewController.swift; sourceTree = "<group>"; };
+		187576F624650EFB003991A4 /* Session6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session6ViewController.swift; sourceTree = "<group>"; };
+		187576F724650EFB003991A4 /* Session3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session3ViewController.swift; sourceTree = "<group>"; };
+		187576F824650EFB003991A4 /* Session1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session1ViewController.swift; sourceTree = "<group>"; };
+		187576F924650EFB003991A4 /* Session8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session8ViewController.swift; sourceTree = "<group>"; };
+		187576FA24650EFB003991A4 /* Session2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session2ViewController.swift; sourceTree = "<group>"; };
+		187576FB24650EFB003991A4 /* Session7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session7ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +80,16 @@
 				1872F64024648C1F0029FA1D /* SceneDelegate.swift */,
 				1872F64224648C1F0029FA1D /* ViewController.swift */,
 				1872F65224648CB00029FA1D /* Session1.swift */,
+				187576F224650BC1003991A4 /* Session2.swift */,
 				1872F64424648C1F0029FA1D /* Main.storyboard */,
+				187576F824650EFB003991A4 /* Session1ViewController.swift */,
+				187576FA24650EFB003991A4 /* Session2ViewController.swift */,
+				187576F724650EFB003991A4 /* Session3ViewController.swift */,
+				187576F524650EFB003991A4 /* Session4ViewController.swift */,
+				187576F424650EFB003991A4 /* Session5ViewController.swift */,
+				187576F624650EFB003991A4 /* Session6ViewController.swift */,
+				187576FB24650EFB003991A4 /* Session7ViewController.swift */,
+				187576F924650EFB003991A4 /* Session8ViewController.swift */,
 				1872F64724648C200029FA1D /* Assets.xcassets */,
 				1872F64924648C200029FA1D /* LaunchScreen.storyboard */,
 				1872F64C24648C200029FA1D /* Info.plist */,
@@ -141,9 +168,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187576FE24650EFB003991A4 /* Session6ViewController.swift in Sources */,
 				1872F64324648C1F0029FA1D /* ViewController.swift in Sources */,
+				187576FC24650EFB003991A4 /* Session5ViewController.swift in Sources */,
+				1875770324650EFB003991A4 /* Session7ViewController.swift in Sources */,
 				1872F63F24648C1F0029FA1D /* AppDelegate.swift in Sources */,
+				1875770224650EFB003991A4 /* Session2ViewController.swift in Sources */,
+				187576FF24650EFB003991A4 /* Session3ViewController.swift in Sources */,
+				1875770024650EFB003991A4 /* Session1ViewController.swift in Sources */,
+				187576F324650BC1003991A4 /* Session2.swift in Sources */,
+				1875770124650EFB003991A4 /* Session8ViewController.swift in Sources */,
 				1872F65324648CB00029FA1D /* Session1.swift in Sources */,
+				187576FD24650EFB003991A4 /* Session4ViewController.swift in Sources */,
 				1872F64124648C1F0029FA1D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

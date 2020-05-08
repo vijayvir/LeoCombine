@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        session1()
+        session2()
     
     }
     func session1(){
@@ -31,10 +31,19 @@ class ViewController: UIViewController {
         
        // Session1.defferPub()
         
+        //*****************************************************************************
+       // Session1.whatIsASubscriber()
         
-        Session1.whatIsASubscriber()
+        //Session1.sinkSub()
+       // Session1.sinkSeprateSub()
+        //Session1.assignSub()
+        
+        Session1.howToCancelSubscription()
     }
 
+    func session2(){
+        Session2.whatIsAnOperator()
+    }
 
 }
 

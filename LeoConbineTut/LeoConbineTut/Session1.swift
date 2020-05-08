@@ -156,9 +156,90 @@ class Session1 {
         publisher
             .sink(receiveValue: { print($0) })
             .store(in: &cancellables)
-        publisher.send("Ritesh")
-        publisher.send("Ritesh Gupta")
+        publisher.send("vijayvir   ")
+        publisher.send("Singgnb")
+    
     }
 
+    
+    // Different kind of Subscribers
+    
+    class func sinkSub(){
+        
+        // Sink
+        let p1 = PassthroughSubject<String, Never>()
+        p1.sink(receiveValue: { print($0) }).store(in: &cancellables)
+        p1.send("Sink ")
+        p1.send("Sink Subcriber")
+        
+        
+    }
+    class func sinkSeprateSub(){
+        
+        // Sink
+        let p1 = PassthroughSubject<String, Never>()
+        let sink = Subscribers.Sink<String, Never>(
+                   receiveCompletion: { _ in },
+                   receiveValue: { print($0) }
+               )
+        p1.subscribe(sink)
+        p1.send("Sink ")
+        p1.send("Sink Subcriber")
+        
+        //
+      
+        
+    }
+    var isHidden : Bool = true
+    class func assignSub(){
+        // Assign
+        let p3 = PassthroughSubject<Bool, Never>()
+        let sommeSession = Session1()
+        // Assign to particular problem
+        
+        p3.assign(to: \Session1.isHidden, on: sommeSession).store(in: &cancellables)
+        p3.sink(receiveCompletion: { (subComNever) in
+            print("subComNever")
+        }) { (value) in
+            print("value is printed ",  value)
+            
+        }.store(in: &cancellables)
+        p3.send(true)
+        p3.send(false)
+        
+        
+        let p4 = PassthroughSubject<Bool, Never>()
+        let assign = Subscribers.Assign(object: sommeSession, keyPath: \.isHidden)
+          
+              p4.subscribe(assign)
+              p4.send(false)
+        
+        
+        
+        // First need to understand lifecycle
+               let p5 = PassthroughSubject<Bool, Never>()
+               let subscriber = AnySubscriber<Bool, Never>(
+                   receiveSubscription: { subscription in subscription.request(.unlimited) },
+                   receiveValue: { value in print(value); return .none },
+                   receiveCompletion: nil
+               )
+               p5.subscribe(subscriber)
+               p5.send(false)
+        
+        
+        
+    }
+    
+    
+     // Cancellable
+       class func howToCancelSubscription() {
+            let p1 = PassthroughSubject<String, Never>()
+            let sink1 = p1.sink(receiveValue: { print($0) })
+            sink1.store(in: &cancellables)
+            p1.send("before Cancel")
+            sink1.cancel()
+            p1.send("After cancel")
+        }
+    
 }
 
