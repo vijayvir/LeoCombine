@@ -9,12 +9,15 @@
 import Foundation
 import UIKit
 import Combine
-struct DemoError: Error {}
+struct DemoError22: Error {}
 class Session1 {
      static var cancellables: [AnyCancellable] = []
     // First of all run the one sample to see publisher and subscriber effect in code
     class func sample() {
           // PassthroughSubject is actually a Subject which is a special Publisher
+                    
+         
+        
         
           let p1 = PassthroughSubject<String, Never>()
           p1.send("This is not called as is is called before the sink")

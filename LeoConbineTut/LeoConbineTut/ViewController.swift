@@ -10,12 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var labelSome: UILabel!
+    @IBAction func actionButton(_ sender: UIButton) {
+        
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         session2()
-    
+    let some = NotificationCenter.default.publisher(
+               for: Notification.Name("notification-demo"),
+               object: nil
+           )
     }
     func session1(){
         //Session1.sample()
