@@ -7,25 +7,30 @@
 //
 
 import UIKit
-
+import Combine
 class ViewController: UIViewController {
 
     @IBOutlet weak var labelSome: UILabel!
     @IBAction func actionButton(_ sender: UIButton) {
         
-        
+        NotificationCenter.default.post(name: Notification.Name("notification-demo"), object: "SDF")
     }
     
-    
+    var some : AnyCancellable?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         session2()
-    let some = NotificationCenter.default.publisher(
+   some = NotificationCenter.default.publisher(
                for: Notification.Name("notification-demo"),
                object: nil
-           )
+    ).sink(receiveCompletion: { (event) in
+        print(event)
+    }) { (value) in
+        print(value)
+        self.labelSome.text = "Some Text123,\(value)"
+        }
     }
     func session1(){
         //Session1.sample()
